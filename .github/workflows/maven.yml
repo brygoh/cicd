@@ -33,6 +33,7 @@ jobs:
         args: --severity-threshold=high
 
   zap_scan:
+    needs: build-and-test
     runs-on: ubuntu-latest
     name: Scan the webapplication
     steps:
